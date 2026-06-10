@@ -8,22 +8,25 @@ export default function CollectionSection() {
   return (
     <section
       ref={sectionRef}
-      className="md:py-24 py-10 bg-white overflow-hidden"
+      className="md:py-24 py-10 bg-white overflow-hidden [@media(min-width:768px)_and_(max-width:1023px)]:py-16"
     >
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-          <div data-animate className="w-full lg:w-1/2 max-w-xl">
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 [@media(min-width:768px)_and_(max-width:1023px)]:gap-10">
+          <div
+            data-animate
+            className="w-full lg:w-1/2 max-w-xl [@media(min-width:768px)_and_(max-width:1023px)]:max-w-2xl [@media(min-width:768px)_and_(max-width:1023px)]:mx-auto"
+          >
             <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-accent/10 text-accent text-sm font-semibold uppercase tracking-wider">
               Prestige
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-foreground leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-foreground leading-tight [@media(min-width:768px)_and_(max-width:1023px)]:text-4xl [@media(min-width:768px)_and_(max-width:1023px)]:mb-6">
               Collection exclusive
             </h2>
-            <p className="text-xl text-foreground/80 mb-6 font-medium">
+            <p className="text-xl text-foreground/80 mb-6 font-medium [@media(min-width:768px)_and_(max-width:1023px)]:text-lg">
               Une selection de biens pour vivre, investir et profiter pleinement
               d'Agadir.
             </p>
-            <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-10 leading-relaxed [@media(min-width:768px)_and_(max-width:1023px)]:mb-8 [@media(min-width:768px)_and_(max-width:1023px)]:text-base">
               Des villas en bord de mer aux appartements contemporains, notre
               collection exclusive vous ouvre les portes des proprietes les plus
               recherchees d'Agadir.
@@ -36,7 +39,10 @@ export default function CollectionSection() {
               <ArrowRight size={20} />
             </a>
           </div>
-          <div data-animate className="w-full lg:w-1/2 relative">
+          <div
+            data-animate
+            className="w-full lg:w-1/2 relative [@media(min-width:768px)_and_(max-width:1023px)]:max-w-2xl [@media(min-width:768px)_and_(max-width:1023px)]:mx-auto"
+          >
             <div className="absolute inset-0 bg-accent/5 rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
             <img
               src={collectionImage}

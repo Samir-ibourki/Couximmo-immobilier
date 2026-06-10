@@ -17,14 +17,15 @@ export function useSectionReveal(options = {}) {
         return;
       }
 
-      ScrollTrigger.create({
+      gsap.set(items, { autoAlpha: 0, y: 34 });
+
+      const trigger = ScrollTrigger.create({
         trigger: scope.current,
         start,
         once: true,
         onEnter: () => {
-          gsap.fromTo(
+          gsap.to(
             items,
-            { autoAlpha: 0, y: 34 },
             {
               autoAlpha: 1,
               y: 0,
@@ -38,6 +39,8 @@ export function useSectionReveal(options = {}) {
       });
 
       requestAnimationFrame(() => ScrollTrigger.refresh());
+
+      return () => trigger.kill();
     },
     { scope },
   );

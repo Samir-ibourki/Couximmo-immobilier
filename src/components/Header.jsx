@@ -58,8 +58,8 @@ export default function Header({ onContactClick }) {
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         <a
-          href="#top"
-          onClick={(event) => scrollToSection(event, "#top")}
+          href="#home"
+          onClick={(event) => scrollToSection(event, "#home")}
           className={`flex items-center gap-2 transition-colors ${brandClass}`}
         >
           <Building2 size={28} strokeWidth={2} />
@@ -67,7 +67,7 @@ export default function Header({ onContactClick }) {
         </a>
 
         <nav
-          className={`hidden md:flex items-center gap-8 text-sm font-medium transition-colors ${navClass}`}
+          className={`hidden lg:flex items-center gap-8 text-sm font-medium transition-colors ${navClass}`}
         >
           {navItems.map((item) => (
             <a
@@ -81,7 +81,7 @@ export default function Header({ onContactClick }) {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <button
             type="button"
             onClick={handleContactClick}
@@ -93,7 +93,7 @@ export default function Header({ onContactClick }) {
 
         <button
           type="button"
-          className={`md:hidden p-2 transition-colors ${menuButtonClass}`}
+          className={`lg:hidden p-2 transition-colors ${menuButtonClass}`}
           aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
@@ -103,7 +103,7 @@ export default function Header({ onContactClick }) {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden absolute left-0 right-0 top-full bg-white border-b border-border shadow-lg">
+        <div className="lg:hidden absolute left-0 right-0 top-full bg-white border-b border-border shadow-lg">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navItems.map((item) => (
               <a
