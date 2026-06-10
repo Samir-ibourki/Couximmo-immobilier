@@ -10,6 +10,8 @@ export const investmentReasons = [
     title: "Forte demande locative",
     description:
       "Une ville dynamique avec une demande r\u00e9guli\u00e8re pour la location longue dur\u00e9e et saisonni\u00e8re.",
+    extraDescription:
+      "Les quartiers proches de la plage, des services et des axes touristiques restent particuli\u00e8rement recherch\u00e9s par les familles, les actifs et les visiteurs.",
     highlighted: true,
   },
   {

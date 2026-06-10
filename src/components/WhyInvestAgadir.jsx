@@ -84,6 +84,17 @@ export default function WhyInvestAgadir() {
                   >
                     {reason.description}
                   </p>
+                  {reason.extraDescription ? (
+                    <p
+                      className={`mt-4 leading-relaxed ${
+                        reason.highlighted
+                          ? "text-white/80"
+                          : "text-muted-foreground"
+                      }`}
+                    >
+                      {reason.extraDescription}
+                    </p>
+                  ) : null}
                 </article>
               );
             })}
