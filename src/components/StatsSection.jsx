@@ -5,7 +5,11 @@ export default function StatsSection() {
   const sectionRef = useSectionReveal();
 
   return (
-    <section ref={sectionRef} className=" md:py-24 py-10 bg-muted/30">
+    <section
+      id="agency"
+      ref={sectionRef}
+      className=" md:py-24 py-10 bg-muted/30 scroll-mt-24"
+    >
       <div className="container mx-auto px-4 md:px-8">
         <div data-animate className="max-w-3xl mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">

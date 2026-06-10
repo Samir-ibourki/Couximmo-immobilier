@@ -1,15 +1,13 @@
 import { Building2 } from "lucide-react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const footerLinks = [
-  { label: "Categories", href: "#categories" },
+  { label: "Accueil", href: "#home" },
   { label: "Proprietes", href: "#properties" },
   { label: "Services", href: "#services" },
+  { label: "Agence", href: "#agency" },
   { label: "Quartiers", href: "#areas" },
   { label: "Contact", href: "#contact" },
 ];
-
-const legalLinks = ["Mentions legales", "Politique de confidentialite", "CGU"];
 
 export default function Footer() {
   return (
@@ -18,7 +16,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 mb-16">
           <div className="col-span-2 md:col-span-2 lg:col-span-1">
             <a
-              href="#top"
+              href="#home"
               className="flex items-center gap-2 text-primary mb-6"
             >
               <Building2 size={32} strokeWidth={2} />
@@ -30,29 +28,9 @@ export default function Footer() {
               Votre partenaire immobilier a Agadir depuis 2003. Achat, vente,
               location et gestion de biens de prestige.
             </p>
-            <div className="flex gap-4">
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors"
-              >
-                <FaFacebook size={18} />
-              </a>
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors"
-              >
-                <FaInstagram size={18} />
-              </a>
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors"
-              >
-                <FaLinkedin size={18} />
-              </a>
-            </div>
+            <p className="text-sm text-muted-foreground font-medium">
+              Unofficial redesign concept — personal portfolio project.
+            </p>
           </div>
 
           <div className="col-span-1">
@@ -60,7 +38,7 @@ export default function Footer() {
               Navigation
             </h4>
             <ul className="space-y-4">
-              {footerLinks.map((link) => (
+              {footerLinks.slice(0, 3).map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
@@ -74,15 +52,17 @@ export default function Footer() {
           </div>
 
           <div className="col-span-1">
-            <h4 className="text-lg font-bold text-foreground mb-6">Legal</h4>
+            <h4 className="text-lg font-bold text-foreground mb-6">
+              Liens utiles
+            </h4>
             <ul className="space-y-4">
-              {legalLinks.map((label) => (
-                <li key={label}>
+              {footerLinks.slice(3).map((link) => (
+                <li key={link.label}>
                   <a
-                    href="#contact"
+                    href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors font-medium"
                   >
-                    {label}
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -93,8 +73,30 @@ export default function Footer() {
             <h4 className="text-lg font-bold text-foreground mb-6">Contact</h4>
             <ul className="space-y-4 text-muted-foreground font-medium">
               <li>Agadir, Maroc</li>
-              <li>+212 674 60 20 18</li>
-              <li>info@immobilieragadir.com</li>
+              <li>
+                <a
+                  href="tel:+212674602018"
+                  className="hover:text-primary transition-colors"
+                >
+                  +212 674 60 20 18
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@immobilieragadir.com"
+                  className="hover:text-primary transition-colors"
+                >
+                  info@immobilieragadir.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/212674602018"
+                  className="hover:text-primary transition-colors"
+                >
+                  WhatsApp
+                </a>
+              </li>
             </ul>
           </div>
         </div>

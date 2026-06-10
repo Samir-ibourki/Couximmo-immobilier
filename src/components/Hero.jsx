@@ -49,7 +49,7 @@ export default function Hero({ onContactClick }) {
 
   return (
     <section
-      id="top"
+      id="home"
       ref={heroRef}
       className="relative flex min-h-screen items-center overflow-hidden pt-24"
     >
