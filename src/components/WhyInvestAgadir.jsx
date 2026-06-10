@@ -1,5 +1,5 @@
 import { Building2, Home, MapPin, TrendingUp, Waves } from "lucide-react";
-import coastlineImage from "../assets/area_3.jpg";
+import coastlineImage from "../assets/area_3.webp";
 import { investmentReasons } from "../data/investmentReasons.js";
 import { useSectionReveal } from "../hooks/useSectionReveal.js";
 
@@ -36,6 +36,8 @@ export default function WhyInvestAgadir() {
             <img
               src={coastlineImage}
               alt="Littoral et quartiers d'Agadir"
+              loading="lazy"
+              decoding="async"
               className="h-full min-h-80 w-full object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent"></div>

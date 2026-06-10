@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import collectionImage from "../assets/collection.png";
+import collectionImage from "../assets/collection.webp";
 import { useSectionReveal } from "../hooks/useSectionReveal.js";
 
 export default function CollectionSection() {
@@ -47,6 +47,8 @@ export default function CollectionSection() {
             <img
               src={collectionImage}
               alt="Collection exclusive Agadir"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto aspect-4/3 object-cover rounded-3xl shadow-xl"
             />
           </div>

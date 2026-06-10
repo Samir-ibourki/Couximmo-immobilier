@@ -1,7 +1,7 @@
-import propertyOneImage from "../assets/prop-1.png";
-import propertyTwoImage from "../assets/prop-2.png";
-import propertyThreeImage from "../assets/prop-3.png";
-import propertyFourImage from "../assets/prop-4.png";
+import propertyOneImage from "../assets/prop-1.webp";
+import propertyTwoImage from "../assets/prop-2.webp";
+import propertyThreeImage from "../assets/prop-3.webp";
+import propertyFourImage from "../assets/prop-4.webp";
 
 export const properties = [
   {

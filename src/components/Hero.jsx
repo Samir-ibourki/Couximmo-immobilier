@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
-import heroImage from "../assets/heroo.png";
+import heroImage from "../assets/heroo.webp";
 import { gsap, useGSAP } from "../lib/gsap.js";
 
 export default function Hero({ onContactClick }) {
@@ -59,6 +59,9 @@ export default function Hero({ onContactClick }) {
           data-hero-bg
           src={heroImage}
           alt="Vue panoramique d'Agadir"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover object-center"
         />
         {/* Gradients for better text readability */}

@@ -38,10 +38,12 @@ export default function FeaturedProperties() {
               data-animate
               className="group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-border/50 overflow-hidden transition-shadow duration-300 flex flex-col"
             >
-              <div className="relative aspect-4/3verflow-hidden">
+              <div className="relative aspect-4/3 overflow-hidden">
                 <img
                   src={prop.image}
                   alt={prop.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary uppercase tracking-wider">

@@ -1,7 +1,7 @@
-import villaImage from "../assets/cat-villa.png";
-import apartmentImage from "../assets/cat-appartement.png";
-import landImage from "../assets/cat-terrain.png";
-import commerceImage from "../assets/cat-commerce.png";
+import villaImage from "../assets/cat-villa.webp";
+import apartmentImage from "../assets/cat-appartement.webp";
+import landImage from "../assets/cat-terrain.webp";
+import commerceImage from "../assets/cat-commerce.webp";
 
 export const categories = [
   { id: "villas", title: "Villas", image: villaImage },

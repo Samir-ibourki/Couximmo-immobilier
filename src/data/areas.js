@@ -1,9 +1,9 @@
-import areaOneImage from "../assets/founty.jpg";
-import areaTwoImage from "../assets/area_2.jpg";
-import areaThreeImage from "../assets/marina.png";
-import areaFourImage from "../assets/area_4.jpg";
-import areaFiveImage from "../assets/taghazout.png";
-import areaSixImage from "../assets/tamraght.png";
+import areaOneImage from "../assets/founty.webp";
+import areaTwoImage from "../assets/area_2.webp";
+import areaThreeImage from "../assets/marina.webp";
+import areaFourImage from "../assets/area_4.webp";
+import areaFiveImage from "../assets/taghazout.webp";
+import areaSixImage from "../assets/tamraght.webp";
 
 export const navItems = [
   { label: "Categories", href: "#categories" },
